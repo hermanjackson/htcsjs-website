@@ -5,7 +5,9 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+const menuLinks = document.querySelector(".nabar__menu");
+
+const mobileMenu = () => {
+  menuLinks.classList.toggle("active");
+  menuLinks.addEventListener("click", mobileMenu);
 };
